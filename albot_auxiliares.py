@@ -26,5 +26,4 @@ def imprimir_secuencia(string,separador, unificador,tiempo):
         time.sleep(tiempo)
 
 def loading():
-    for i in range(3):
-            imprimir_mensaje("L O A D I N G . . .")
+    imprimir_mensaje("L O A D I N G . . .")

@@ -48,7 +48,7 @@ def jugar(imagenes,dibujadas):
     
     dibujadas.add(imagen)
     imprimir_imagen(imagen)
-    intento = input("\n>>")
+    intento = (input("\n>>")).lower()
     cant_intentos = 1
     while (cant_intentos < 15):    
         if not imagenes[imagen] == intento:
@@ -57,6 +57,7 @@ def jugar(imagenes,dibujadas):
                 imprimir_mensaje("¿Te rendis? Si te querés rendir, apretá 0:")
             intento = input("\n>>")
             if intento == "0":
+                imprimir_mensaje(f"La respuesta era {imagenes[imagen]}!")
                 return False
             cant_intentos+=1
         else:
