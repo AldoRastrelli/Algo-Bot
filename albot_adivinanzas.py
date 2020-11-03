@@ -12,8 +12,8 @@ def adivinar(nombre_usuario):
     juego_nuevo = True
     while (juego_nuevo):
         iniciar_partida(nombre_usuario)
-        imprimir_mensaje("\n>>Gran partida!\nSi querés jugar de nuevo, apreta 'N'. Sino, apretá cualquier tecla.")
-        juego_nuevo = (input("\n>>").upper() == "N")
+        imprimir_mensaje("\n>>Gran partida!\nSi querés jugar de nuevo, apreta 'Y'. Sino, apretá cualquier tecla.")
+        juego_nuevo = (input("\n>>").upper() == 'Y')
 
     imprimir_mensaje("\n>>Para volver al menú anterior, apretá 'M'. Para salir, apretá cualquier tecla.")
     salir = (input("\n>>").upper() != 'M')
@@ -83,8 +83,6 @@ def obtener_intento():
     return intento
 
 def adivina_numero(numero,intento):
-    print(numero)
-    print(intento)
     return numero == int(intento)
 
 def dar_pista(intento,numero):

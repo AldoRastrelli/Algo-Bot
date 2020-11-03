@@ -11,8 +11,8 @@ def buscaminas():
     while (juego_nuevo):
         loading()
         buscaminas_main.buscaminas_main()
-        imprimir_mensaje("\n>>Gran partida!\nSi querés jugar de nuevo, apreta 'N'. Sino, apretá cualquier tecla.")
-        juego_nuevo = (input("\n>>").upper() == "N")
+        imprimir_mensaje("\n>>Gran partida!\nSi querés jugar de nuevo, apreta 'Y'. Sino, apretá cualquier tecla.")
+        juego_nuevo = (input("\n>>").upper() == 'Y')
 
     imprimir_mensaje("\n>>Para volver al menú anterior, apretá 'M'. Para salir, apretá cualquier tecla.")
     salir = (input("\n>>").upper() != 'M')

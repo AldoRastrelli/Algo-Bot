@@ -28,8 +28,8 @@ def pictionary(nombre_usuario):
         else:
             imprimir_mensaje(f"\n>>Mejor suerte la próxima, {nombre_usuario}.")
 
-        imprimir_mensaje("\nGran partida!\nSi querés jugar de nuevo, apreta 'N'. Sino, apretá cualquier tecla.")
-        juego_nuevo = (input("\n>>").upper() == "N")
+        imprimir_mensaje("\nGran partida!\nSi querés jugar de nuevo, apreta 'Y'. Sino, apretá cualquier tecla.")
+        juego_nuevo = (input("\n>>").upper() == 'Y')
 
     imprimir_mensaje("\n>>Para volver al menú anterior, apretá 'M'. Para salir, apretá cualquier tecla.")
     salir = (input("\n>>").upper() != 'M')
